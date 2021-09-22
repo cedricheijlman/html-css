@@ -1,0 +1,36 @@
+body {
+  font-family: Courier;
+}
+
+.tijgerinfo {
+  text-align: justify;
+  width: 800px;
+  color: blue;
+}
+
+.titel {
+  color: green;
+}
+
+.tijgertitel {
+  color: red;
+}
+
+.linktekst {
+  color: blue;
+}
+
+.helloworld {
+  color: green;
+}
+
+.tijgerfoto {
+  width: 200px;
+  height: 200px;
+  border-radius: 30px;
+}
+
+.tiger {
+  color: green;
+  font-size: 110px;
+}
