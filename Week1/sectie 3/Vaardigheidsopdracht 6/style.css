@@ -1,0 +1,121 @@
+body {
+  font-family: courier;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 0px;
+
+  padding: 0;
+}
+
+.titel,
+.linktitel,
+h5 {
+  color: green;
+}
+.tijgerpagina {
+  margin-bottom: -20;
+  color: green;
+}
+.subtitel {
+  margin-bottom: 4;
+}
+
+.sectie2 .subtitel {
+  margin-left: 0px;
+}
+
+.sectie2 .tijgerpagina {
+  margin-left: 0px;
+}
+.subtitel {
+  color: red;
+}
+
+p {
+  color: green;
+  margin: -5;
+}
+
+.sectie2 p {
+  margin-left: 0;
+  padding-right: 80;
+  line-height: 1.3;
+  text-align: justify;
+}
+
+.sectie1 {
+  width: 75%;
+  float: left;
+  position: relative;
+}
+
+.sectie1 p,
+h3,
+h4,
+a {
+  margin-left: 37;
+}
+
+.sectie1 .tijgerpagina {
+  margin-top: 5px;
+  font-size: 21px;
+}
+
+.sectie1 p {
+  margin-bottom: 3;
+}
+
+.sectie1 .linktitel {
+  margin-top: -5px;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.sectie1 .subtitel {
+  margin-top: -40px;
+}
+
+.absoluut {
+  position: relative;
+  margin-left: 450px;
+  bottom: 130px;
+  color: green;
+}
+
+.sectie2 {
+  width: 25%;
+  float: left;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.sectie3 {
+  border-top: 3px solid #000000;
+  margin-top: 30px;
+}
+
+.sectie3 img {
+  height: 130px;
+  width: 190px;
+  border-radius: 100%;
+  position: relative;
+  margin-left: 500px;
+}
+
+.sectie1 img {
+  width: 250px;
+  height: 250px;
+  border: 8px solid #000000;
+  padding: 110px;
+  margin-left: 40px;
+}
+
+.sectie3 h4 {
+  position: absolute;
+  margin-left: 1000px;
+  bottom: -150px;
+}
