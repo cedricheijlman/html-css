@@ -1,0 +1,48 @@
+/* ----------- Opdracht 6 en 7 ------------- */
+
+.kleine {
+  text-transform: uppercase;
+}
+
+.header-h1 {
+  text-transform: lowercase;
+}
+
+/* ----------- Opdracht 8 ------------- */
+
+.link1 {
+  margin-top: 1%;
+
+  margin-left: 2%;
+  font-family: Courier;
+}
+
+.link2 a {
+  text-decoration: none;
+  color: green;
+  font-family: Courier;
+}
+
+.link1,
+.link2 {
+  font-size: 20px;
+  font-weight: 200;
+  display: inline-block;
+  margin-left: 2%;
+}
+
+/* ----------- 9 ------------- */
+
+.knop {
+  background-color: blue;
+  padding: 20px;
+  border-radius: 10%;
+  text-decoration: none;
+  color: white;
+
+  margin: 5;
+}
+
+.knop:hover {
+  background-color: red;
+}

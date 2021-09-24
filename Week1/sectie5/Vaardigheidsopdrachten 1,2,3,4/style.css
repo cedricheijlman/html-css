@@ -1,0 +1,22 @@
+.opdracht1 {
+  font-family: "Mukta";
+}
+
+@media (max-width: 600px) {
+  .media {
+    color: green;
+  }
+}
+
+div {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.opdracht4 {
+  float: right;
+  margin-top: 15%;
+}

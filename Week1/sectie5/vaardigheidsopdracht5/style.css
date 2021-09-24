@@ -1,0 +1,6 @@
+.foto {
+  background: url(fotooo.jpeg);
+  top: 0;
+  height: 50vh;
+  background-size: cover;
+}

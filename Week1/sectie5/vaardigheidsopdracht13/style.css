@@ -1,0 +1,42 @@
+.column {
+  display: flex;
+}
+
+img {
+  width: 100vh;
+  height: 20vh;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.foto1:hover {
+  transform: scale(1.2);
+}
+
+.foto2:hover {
+  transform: scale(1.2);
+}
+
+.foto3:hover {
+  transform: scale(1.2);
+}
+
+.foto4:hover {
+  transform: scale(1.2);
+}
+
+.foto5:hover {
+  transform: scale(1.2);
+}
+
+.foto6:hover {
+  transform: scale(1.2);
+}
+
+.foto7:hover {
+  transform: scale(1.2);
+}
+
+.foto8:hover {
+  transform: scale(1.2);
+}

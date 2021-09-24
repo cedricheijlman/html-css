@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30vh;
+}
+
+.info {
+  width: 60vh;
+  margin-left: 20px;
+}
+
+.info h3 {
+  text-align: center;
+}
+
+img {
+  width: 50vh;
+  height: 20vh;
+  image-rendering: auto;
+  object-fit: cover;
+}

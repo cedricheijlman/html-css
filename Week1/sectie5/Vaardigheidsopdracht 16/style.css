@@ -1,0 +1,65 @@
+.wrapper {
+  background-color: #fff;
+  max-width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+body {
+  background-color: #eee;
+}
+
+.box h2 {
+  text-align: center;
+  margin: 10px 0;
+  color: #999;
+}
+
+.box {
+  float: left;
+  background-color: #eee;
+  border: 1px solid black;
+  width: 29%;
+  padding: 1%;
+  margin: 1%;
+}
+
+.text {
+  background-color: gray;
+}
+
+/* -------------- Wrapper 2 --------------*/
+
+.wrapper2 {
+  background-color: #fff;
+  max-width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.box2 h2 {
+  text-align: center;
+  margin: 10px 0;
+  color: #999;
+}
+
+.box2 {
+  float: left;
+  background-color: #eee;
+  border: 1px solid black;
+  width: 29%;
+  padding: 1%;
+  margin: 1%;
+}
+.boxen2:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.text2 {
+  background-color: gray;
+}
