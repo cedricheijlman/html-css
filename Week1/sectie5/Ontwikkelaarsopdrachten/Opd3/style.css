@@ -1,0 +1,37 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+  color: orange;
+  font-weight: lighter;
+}
+
+.titel {
+  font-size: 30px;
+}
+
+.doneer {
+  margin-right: 7%;
+  width: 240px;
+}
+
+.bescherm {
+  width: 280px;
+}
+
+.titel {
+  width: max-content;
+}
+.bescherm {
+  margin-top: 0.1%;
+}
+
+.doneer,
+.bescherm {
+  letter-spacing: 13px;
+
+  line-height: 26px;
+}
+
+.wrapper {
+  display: flex;
+  margin: 10px;
+}

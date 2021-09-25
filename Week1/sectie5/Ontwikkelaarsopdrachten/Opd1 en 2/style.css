@@ -1,0 +1,48 @@
+.box {
+  height: 30px;
+  width: 150px;
+  margin: 3px;
+  float: left;
+}
+
+.box p {
+  text-align: center;
+  padding-top: 6px;
+}
+
+.een {
+  background-color: green;
+}
+
+.twee {
+  background-color: yellow;
+}
+
+.drie {
+  background-color: red;
+}
+
+.vier {
+  background-color: blue;
+}
+
+.vijf {
+  background-color: green;
+}
+
+.zes {
+  background-color: yellow;
+}
+
+.zeven {
+  background-color: red;
+}
+
+.acht {
+  background-color: blue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}

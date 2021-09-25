@@ -1,0 +1,80 @@
+img {
+  height: 250px;
+
+  width: 100%;
+  object-fit: cover;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+.mediagroep {
+  display: inline-block;
+}
+
+p {
+  font-size: 30px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid orange;
+  width: 300px;
+}
+
+.label {
+  vertical-align: top;
+}
+
+.naam label,
+.email label,
+.wachtwoord label,
+.geslacht label,
+.label {
+  display: inline-block;
+  width: 120px;
+}
+
+.naam input,
+.email input,
+.wachtwoord input,
+.geslacht select {
+  margin-bottom: 10px;
+  width: 290px;
+  height: 28px;
+  border: 1px solid orange;
+}
+
+.knop {
+  display: block;
+  height: 40px;
+  width: 110px;
+  border: 1px solid orange;
+}
+
+.form {
+  display: block;
+  margin: 0 33.33%;
+}
+
+form {
+  margin: 0;
+}
+
+@media (max-width: 580px) {
+  /* For mobile phones: */
+
+  .knop {
+    width: 200px;
+  }
+
+  img {
+    height: 32%;
+  }
+}
+
+@media (max-width: 385px) {
+  img {
+    width: 420px;
+  }
+}
