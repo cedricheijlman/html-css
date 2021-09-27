@@ -73,7 +73,7 @@ form {
   }
 }
 
-@media (max-width: 385px) {
+@media (max-width: 455px) {
   img {
     width: 420px;
   }
