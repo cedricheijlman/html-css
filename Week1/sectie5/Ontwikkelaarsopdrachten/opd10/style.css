@@ -57,12 +57,17 @@ p {
   margin: 0 33.33%;
 }
 
-form {
-  margin: 0;
+@media only screen and (max-width: 690px) {
+  form {
+    margin-left: -10%;
+  }
 }
 
-@media (max-width: 580px) {
+@media only screen and (max-width: 542px) {
   /* For mobile phones: */
+  form {
+    margin-left: -30%;
+  }
 
   .knop {
     width: 200px;
@@ -73,8 +78,18 @@ form {
   }
 }
 
-@media (max-width: 455px) {
+@media only screen and (max-width: 480px) {
   img {
-    width: 420px;
+    width: 450px;
+  }
+
+  form {
+    margin-left: -30%;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  form {
+    margin-left: -60%;
   }
 }
