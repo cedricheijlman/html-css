@@ -1,0 +1,17 @@
+.flex-container {
+  border: 3px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex-child {
+  border: 1px solid green;
+  height: 300px;
+  width: 240px;
+}
+
+body {
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+}

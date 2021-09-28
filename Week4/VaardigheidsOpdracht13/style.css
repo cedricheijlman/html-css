@@ -1,0 +1,42 @@
+.flex-container {
+  display: flex;
+  border: 3px solid black;
+  height: 95vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.flex-child {
+  border: 1px solid green;
+  width: 235px;
+  justify-content: center;
+  display: flex;
+}
+
+body {
+  font-size: 29px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.een,
+.vijf,
+.negen {
+  background-color: yellow;
+}
+
+.twee,
+.zes,
+.tien {
+  background-color: red;
+}
+
+.drie,
+.zeven {
+  background-color: blue;
+}
+
+.vier,
+.acht {
+  background-color: purple;
+}

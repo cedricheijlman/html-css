@@ -1,0 +1,11 @@
+.flex-container {
+  border: 3px solid black;
+  display: flex;
+}
+
+.flex-child {
+  border: 1px solid green;
+  height: 300px;
+  flex-basis: 180px;
+  flex-shrink: 0;
+}
