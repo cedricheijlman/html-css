@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-image: url("fotosectie2.jpg");
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.box {
+  height: 100vh;
+  background-color: black;
+  clip-path: polygon(240px 170px, 320px 170px, 320px 200px, 240px 200px);
+}
