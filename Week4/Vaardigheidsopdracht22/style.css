@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 25px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.flex-container {
+  display: flex;
+  border: 3px solid black;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.flex-child {
+  border: 1px solid green;
+  height: 450px;
+  width: 200px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.een {
+  background-color: yellow;
+  flex: 1;
+}
+
+.twee {
+  background-color: red;
+  flex: 1;
+}
+
+.drie {
+  background-color: blue;
+  flex: 8;
+}
+
+.vier {
+  background-color: purple;
+  flex: 1;
+}

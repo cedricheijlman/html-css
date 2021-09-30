@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 25px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.flex-container {
+  width: auto;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.flex-child {
+  border: 1px solid green;
+  width: 250px;
+  height: 300px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.een,
+.vijf,
+.negen {
+  background-color: yellow;
+}
+
+.twee,
+.zes,
+.tien {
+  background-color: red;
+}
+
+.drie,
+.zeven {
+  background-color: blue;
+}
+
+.vier,
+.acht {
+  background-color: purple;
+  height: 40px;
+}

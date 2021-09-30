@@ -1,0 +1,57 @@
+.flex-container {
+  display: flex;
+  border: 3px solid black;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 18px;
+  align-content: flex-start;
+}
+
+.flex-child {
+  border: 1px solid green;
+  width: 250px;
+  height: 250px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 29px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.een,
+.vijf,
+.negen {
+  background-color: yellow;
+  min-width: 250px;
+}
+
+.twee,
+.zes,
+.tien {
+  background-color: red;
+}
+
+.drie,
+.zeven {
+  background-color: blue;
+}
+
+.vier,
+.acht {
+  background-color: purple;
+}
+
+@media screen and (max-width: 528px) {
+  .flex-container .flex-child {
+    height: 45px;
+    width: 280px;
+  }
+}
