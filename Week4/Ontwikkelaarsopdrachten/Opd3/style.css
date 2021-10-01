@@ -43,6 +43,7 @@
 img {
   width: 95%;
   height: 250px;
+  object-fit: cover;
 }
 
 .gallerij {
