@@ -1,0 +1,27 @@
+* {
+  background-color: rgb(163, 162, 162);
+}
+
+.navitems {
+  background-color: rgb(122, 206, 122);
+  border: 5px solid lightsalmon;
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.navitem {
+  display: flex;
+  flex-grow: 1;
+  border: 1px solid black;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 250;
+  background-color: rgb(122, 206, 122);
+}
+
+.home {
+  flex: 3;
+}

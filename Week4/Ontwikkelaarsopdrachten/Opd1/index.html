@@ -1,0 +1,105 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Flexbox</h1>
+      <div class="flex-container">
+        <div class="flexbox">
+          <div class="left title"><h6>Container Properties</h6></div>
+          <div class="left">
+            <h6 class="underlined">//Creates a flexbox</h6>
+            <h6>display: flex;</h6>
+          </div>
+          <div class="left">
+            <h6 class="underlined">//Direction, establishes main-axis</h6>
+            <h6>
+              flex-direction: row || row-reverse || column || column-reverse
+            </h6>
+          </div>
+          <div class="left">
+            <h6 class="underlined">//To wrap or not to wrap</h6>
+            <h6>flex-wrap: nowrap || wrap || wrap-reverse</h6>
+          </div>
+          <div class="left">
+            <h6 class="underlined">//Shorthanded (direction wrap)</h6>
+            <h6>flex-flow: flex-direciton flex-wrap</h6>
+          </div>
+          <div class="left">
+            <h6 class="underlined">//Allignement main axis</h6>
+            <h6>
+              justify-content: flex-start || flex-end || center || space-between
+              || space-around || space-evenly
+            </h6>
+          </div>
+          <div class="left">
+            <h6 class="underlined">//Allignement cross axis</h6>
+            <h6>
+              align-items: stretch || flex-start || flex-end || center ||
+              baseline
+            </h6>
+          </div>
+          <div class="left">
+            <h6 class="underlined">Alignement lines within the container</h6>
+            <h6>
+              align-content: normal || flex-start || flex-end || center ||
+              space-between || space-around || space-evenly || stretch
+            </h6>
+          </div>
+
+          <div class="left">
+            <h6 class="underlined"></h6>
+            <h6></h6>
+          </div>
+        </div>
+        <div class="flexbox">
+          <div class="right title">
+            <h6>Item properties</h6>
+          </div>
+          <div class="right">
+            <h6 class="underlined">//Order of the (flex) html-elements</h6>
+            <h6>order: integer (default: 0)</h6>
+          </div>
+          <div class="right">
+            <h6 class="underlined">//Ability to grow if necessary</h6>
+            <h6>flex-grow: integer (default: 0)</h6>
+          </div>
+          <div class="right">
+            <h6 class="underlined">//Ability to shrink if necessary</h6>
+            <h6>flex-shrink: positive integer (default: 1)</h6>
+          </div>
+          <div class="right">
+            <h6 class="underlined">//defines default size of the item</h6>
+            <h6>flex-basis length || keyword (default: auto)</h6>
+          </div>
+          <div class="right">
+            <h6 class="underlined">//Shorthanded (grow shrink basis)</h6>
+            <h6>flex: flex-grow flex-shrink flex-basis (default 0 1 auto)</h6>
+          </div>
+          <div class="right">
+            <h6 class="underlined">
+              //Override default alignment form align-items
+            </h6>
+            <h6>
+              align-self: auto || flex-start || flex-end || center || baseline
+              || stretch
+            </h6>
+          </div>
+          <div class="right">
+            <h6 class="underlined"></h6>
+            <h6></h6>
+          </div>
+          <div class="right">
+            <h6 class="underlined"></h6>
+            <h6></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
