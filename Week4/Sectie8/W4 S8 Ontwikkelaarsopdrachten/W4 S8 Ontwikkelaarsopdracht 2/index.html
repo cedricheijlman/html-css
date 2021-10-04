@@ -1,0 +1,186 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Grid</h1>
+    <div class="container">
+      <div class="gridbox grid1">
+        <div class="griditem item-1">Container Properties</div>
+        <div class="griditem item-2">
+          <div class="unlined">//Creates a grid</div>
+          display: grid || inline-grid;
+        </div>
+        <div class="griditem item-3">
+          <div class="unlined">Creates a grid columns</div>
+          grid-template-columns: length || percentage || fr || line-name
+        </div>
+        <div class="griditem item-4">
+          <div class="unlined">//Creates grid rows</div>
+          grid-template-rows: length || percentage || fr || line-name
+        </div>
+        <div class="griditem item-5">
+          <div class="unlined">//Creates a grid with specified areas</div>
+          grid-template-area: grid-area-name || none ||
+        </div>
+        <div class="griditem item-6">
+          <div class="unlined">
+            //Creates rows, columns and areas in a single declaration
+          </div>
+          grid-template: none (initial values) || grid-template-rows /
+          grid-template-columns
+        </div>
+        <div class="griditem item-7">
+          <div class="unlined">
+            //Creates spaces between grid-items on the row axis
+          </div>
+          row-gap (grid-row-gap) : length
+        </div>
+        <div class="griditem item-8">
+          <div class="unlined">
+            //Creates Spaces between grid-items on the column axis
+          </div>
+          column-gap (grid-column-gap) : length
+        </div>
+        <div class="griditem item-9">
+          <div class="unlined">
+            //Creates spaces between grid-items on the row and column axis
+          </div>
+          gap (grid-gap) : grid-row-gap grid-column-gap
+        </div>
+        <div class="griditem item-10">
+          <div class="unlined">
+            //Align grid items along the inline / row axis
+          </div>
+          justify-items: start || end || center || stretch
+        </div>
+        <div class="griditem item-11">
+          <div class="unlined">
+            //Align grid items along the block / column axis
+          </div>
+          align-items: start || end || center || stretch
+        </div>
+        <div class="griditem item-12">
+          <div class="unlined">
+            //Align grid items along the inline and block axis (shorthand)
+          </div>
+          place-items: align-items / justify-items
+        </div>
+        <div class="griditem item-13">
+          <div class="unlined">
+            //Align the whole grid (container) along the inline / row axis
+          </div>
+          justify-content: start || end || center || stretch || space-around ||
+          space-between || space evenly
+        </div>
+        <div class="griditem item-14">
+          <div class="unlined">
+            //Align the whole grid (container) along the block / block axis
+          </div>
+          justify-content: start || end || center || stretch || space-around ||
+          space-between || space evenly
+        </div>
+        <div class="griditem item-15">
+          <div class="unlined">
+            //Align the whole grid (container) along the inline and block axis
+            (shorthand)
+          </div>
+          place-content: align-content / justify content
+        </div>
+        <div class="griditem item-16">
+          <div class="unlined">
+            //Specifies the size of any auto-generated grid row
+          </div>
+          grid-auto-rows: size (length || percentage || fr)
+        </div>
+        <div class="griditem item-17">
+          <div class="unlined">
+            Specifies the size of any auto-generated grid column
+          </div>
+          grid-auto-columns: size (length || percentage || fr)
+        </div>
+        <div class="griditem item-18">
+          <div class="unlined">
+            //Sets the algorithm that places the grid-items
+          </div>
+          grid-auto-flow: row || column || dense
+        </div>
+        <div class="griditem item-19">
+          <div class="unlined">//Shorthand for almost every property</div>
+          grid-template-rows grid-template-columns grid-template-areas
+          grid-auto-rows grid-auto-columns grid-auto-flow
+        </div>
+      </div>
+      <div class="gridbox grid2">
+        <div class="griditem item2-1">Item properties</div>
+        <div class="griditem item2-2">
+          <div class="unlined">
+            //Determines the column start of a item within the grid
+          </div>
+          grid-column-start: line || span (number || name) || auto
+        </div>
+        <div class="griditem item2-3">
+          <div class="unlined">
+            //Determines the row start of an item within the grid
+          </div>
+          grid-row-start: line || span (number || name) || auto
+        </div>
+        <div class="griditem item2-4">
+          <div class="unlined">
+            //Determines the column end of an item within the grid
+          </div>
+          grid-column-end: line || span (number || name ) || auto
+        </div>
+        <div class="griditem item2-5">
+          <div class="unlined">
+            //Determines the row end of an item within the grid
+          </div>
+          grid-row-end: line || span (number || name) || auto
+        </div>
+        <div class="griditem item2-6">
+          <div class="unlined">//Shorthand for column start and end</div>
+          grid-column: grid-column-start grid-column-end
+        </div>
+        <div class="griditem item2-7">
+          <div class="unlined">//Shorthand for row start and end</div>
+          grid-row: grid-row-start grid-row-end
+        </div>
+        <div class="griditem item2-8">
+          <div class="unlined">//Give a grid area name to a grid item</div>
+          grid-area: name || row-start / column-start / row-end / column-end
+        </div>
+        <div class="griditem item2-9">
+          <div class="unlined">
+            //Aligns a grid-item inside a cell along the row / inline axis
+          </div>
+          justify-self: start || end || center || stretch
+        </div>
+        <div class="griditem item2-10">
+          <div class="unlined">
+            //Aligns a grid-item inside a cell along the column / block axis
+          </div>
+          align-self: start || end || center || stretch
+        </div>
+        <div class="griditem item2-11">
+          <div class="unlined">
+            //Aligns a grid-item inside a cell along the row / inline and column
+            / block axis
+          </div>
+          place-self: align-self justify-self
+        </div>
+        <div class="griditem item2-12"></div>
+        <div class="griditem item2-13"></div>
+        <div class="griditem item2-14"></div>
+        <div class="griditem item2-15"></div>
+        <div class="griditem item2-16"></div>
+        <div class="griditem item2-17"></div>
+        <div class="griditem item2-18"></div>
+        <div class="griditem item2-19"></div>
+      </div>
+    </div>
+  </body>
+</html>

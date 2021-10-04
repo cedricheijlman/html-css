@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(min-content, 10px));
+  justify-content: center;
+}
+
+.box {
+  width: min-content;
+  background-color: rgb(8, 161, 8);
+}
+
+.boxitem-1 {
+  background-color: rebeccapurple;
+}
+
+.boxitem-2 {
+  background-color: yellow;
+}
+
+.boxitem-3 {
+  background-color: green;
+}
+
+.boxitem-4 {
+  background-color: grey;
+}

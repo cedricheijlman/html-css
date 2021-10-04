@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+
+  font-family: "Courier", Courier, monospace;
+  font-size: 8px;
+}
+
+body {
+  background-color: rgb(247, 227, 192);
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 4;
+}
+
+.container {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  border: 3px dashed black;
+
+  background-color: rgb(246, 203, 255);
+}
+
+.gridbox {
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.griditem {
+  border: 1px dotted blue;
+  margin: 2px;
+  padding-top: 6.5px;
+}
+
+.gridbox {
+  display: grid;
+  grid-template-rows: repeat(19, 32px);
+  text-align: center;
+}
+
+.unlined {
+  background-color: rgba(252, 106, 252, 0.7);
+  font-weight: 800;
+}
