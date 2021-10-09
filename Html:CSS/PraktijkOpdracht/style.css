@@ -36,6 +36,8 @@ body {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   backdrop-filter: blur(3px);
+  -moz-backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
 }
 
 .nav-ul {
@@ -88,6 +90,8 @@ body {
 
   .navbar {
     backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
   .nav-ul.show {
