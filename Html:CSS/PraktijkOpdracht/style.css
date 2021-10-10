@@ -403,4 +403,12 @@ body {
     width: 150%;
     flex-wrap: stretch;
   }
+
+  .container-2 {
+    width: 180%;
+  }
+
+  .container-3 {
+    display: none;
+  }
 }
