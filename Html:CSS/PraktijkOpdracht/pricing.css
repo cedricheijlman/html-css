@@ -39,18 +39,18 @@ body {
   -webkit-backdrop-filter: blur(3px);
 }
 
-.nav-ul {
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
-}
-
 .pricing a {
   padding-bottom: 2px;
   border-bottom: 2px solid rgb(77, 129, 241);
 
   width: 100px;
   text-align: center;
+}
+
+.nav-ul {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 .nav-li {
