@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(min-content, 40px));
+  grid-auto-rows: 50px;
+}
+
+.navitem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-1 {
+  background-color: rebeccapurple;
+}
+
+.item-2 {
+  background-color: royalblue;
+}
+
+.item-3 {
+  background-color: seagreen;
+}
+
+.item-4 {
+  background-color: slategrey;
+}
+
+.item-5 {
+  background-color: thistle;
+}
+
+.item-6 {
+  background-color: tomato;
+}

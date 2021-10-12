@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.flexitem {
+  min-width: 210px;
+  max-width: 16.666667%;
+  width: 240px;
+  height: 50px;
+  background-color: antiquewhite;
+  float: left;
+  text-align: center;
+
+  padding-top: 15px;
+}
+
+.item-1 {
+  background-color: rebeccapurple;
+}
+
+.item-2 {
+  background-color: rosybrown;
+}
+
+.item-3 {
+  background-color: gold;
+}
+
+.item-4 {
+  background-color: khaki;
+}
+
+.item-5 {
+  background-color: blueviolet;
+}
+
+.item-6 {
+  background-color: gray;
+}
