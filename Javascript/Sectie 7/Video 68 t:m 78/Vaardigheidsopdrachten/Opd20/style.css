@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
+.item-a {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+}

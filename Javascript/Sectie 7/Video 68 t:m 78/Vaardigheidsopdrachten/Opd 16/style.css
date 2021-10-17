@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 150px;
+  grid-template-rows: repeat(2, 150px);
+}
+
+.klik {
+  background-color: pink;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-family: "Courier", Courier, monospace;
+}
+.nummer {
+  background-color: rgb(189, 72, 189);
+}
