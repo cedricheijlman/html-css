@@ -1,0 +1,15 @@
+.grid-container-item {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  border: 5px solid royalblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: wheat;
+}
+
+.pink {
+  background-color: pink;
+}

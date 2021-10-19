@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="scoreDiv">SCORE <span class="scores">4</span></div>
+      <div class="nummer1">68</div>
+      <div class="som">-</div>
+      <div class="nummer2">28</div>
+      <div class="antwoordDiv">
+        <input type="text" class="antwoord" /><button class="btn">
+          Answer Me!
+        </button>
+      </div>
+    </div>
+    <div class="modalOverlay hidden">
+      <div class="modal">
+        <h2>Gefeliciteerd!</h2>
+        <div class="text">
+          <h5>Je hebt:</h5>
+          <h5>- 11 Vragen goed beantwoord</h5>
+          <h5 class="fout">- 1 vraag fout beantwoord</h5>
+          <h5 class="tijd">- in totaal 1 minuut en 50 seconden</h5>
+        </div>
+        <button class="modalbtn">Play again!</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
