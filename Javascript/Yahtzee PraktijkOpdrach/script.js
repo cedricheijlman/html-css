@@ -8,47 +8,129 @@ let images = [
   "dice-five.png",
   "dice-six.png",
 ];
-let rollKnop = document.querySelector(".btn-Roll");
+let rollKnop = document.querySelector(".btn-roll");
 let playerTurn = 0;
-let rounds = 0;
+let rounds = 1;
 let dicesElement = document.querySelectorAll("img");
+let rollsLeftElement = document.querySelector(".rollsLeft");
+let leftClick = document.querySelectorAll(".leftClick");
+let rightClick = document.querySelectorAll(".rightClick");
 let rollsLeft = 3;
 let diceHold = [false, false, false, false, false];
-let rollsLeftElement = document.querySelector(".rollsLeft");
-// Nummers  Dobbelstenen
+let spelerEenHighElement = document.querySelector(".speler1");
+let spelerTweeHigElement = document.querySelector(".speler2");
+let roundsElement = document.querySelector(".roundDisplay");
 let numbersDices = [0, 0, 0, 0, 0];
+let UpperTotal = [0, 0];
+let grandTotal = [0, 0];
+let upperTotalElement = document.querySelectorAll(".upperTotal");
+let grandTotalElement = document.querySelectorAll(".grandTotal");
+// Game Start
+holdFunctie();
 
-// Als dobbelsteen niet op hold staat nieuwe value - cijfer Wordt Displayed,
-// animatie dobbelsteen wordt toegevoegd en afghaald
+// Als Roll knop wordt geklikt nieuweRoll Functie Uitvoeren
 rollKnop.addEventListener("click", nieuweRoll);
 
-function nieuweRoll() {
-  for (let i = 0; i < dicesElement.length; i++) {
-    if (diceHold[i] === false && rollsLeft > 0) {
-      numbersDices[i] = Math.floor(Math.random() * 6);
-      console.log(numbersDices);
-      dobbelsteenDisplay(i);
-      dobbelsteenAnimatie(i);
+//
+
+for (let i = 0; i < leftClick.length; i++) {
+  leftClick[i].addEventListener("click", function () {
+    if (
+      playerTurn == 0 &&
+      rollsLeft < 3 &&
+      leftClick[i].classList.contains("checked") == false
+    ) {
+      leftClick[i].classList.add("checked");
+      rollsReset();
+      addToSubtotal(i);
+      addToGrandTotal(i);
+      removeLeftScore();
+      highlightSpelerBeurt();
+      removeHolds();
+      switchPlayer();
+    }
+  });
+
+  rightClick[i].addEventListener("click", function () {
+    if (
+      playerTurn == 1 &&
+      rollsLeft < 3 &&
+      rightClick[i].classList.contains("checked") == false
+    ) {
+      rightClick[i].classList.add("checked");
+      rollsReset();
+      addToSubtotal(i);
+      addToGrandTotal(i);
+      removeRightScore();
+      highlightSpelerBeurt();
+      removeHolds();
+      switchPlayer();
+      volgendeRondeDisplay();
+    }
+  });
+}
+
+function rollsReset() {
+  rollsLeft = 3;
+  rollsLeftElement.textContent = `Rolls left: ${rollsLeft}`;
+}
+
+function removeLeftScore() {
+  for (let i = 0; i < leftClick.length; i++) {
+    if (leftClick[i].classList.contains("checked") == false) {
+      leftClick[i].textContent = "-";
     }
   }
-  nextDiceRoll();
 }
 
-function nextDiceRoll() {
-  if (rollsLeft > 0) {
-    rollsLeft--;
-    rollsLeftElement.textContent = `Rolls left: ${rollsLeft}`;
+function removeRightScore() {
+  for (let i = 0; i < rightClick.length; i++) {
+    if (rightClick[i].classList.contains("checked") == false) {
+      rightClick[i].textContent = "-";
+    }
   }
 }
 
-function dobbelsteenDisplay(i) {
-  dicesElement[i].src = images[numbersDices[i]];
+function highlightSpelerBeurt() {
+  if (playerTurn == 0) {
+    spelerEenHighElement.classList.remove("spelerBeurt");
+    spelerTweeHigElement.classList.add("spelerBeurt");
+  } else {
+    spelerEenHighElement.classList.add("spelerBeurt");
+    spelerTweeHigElement.classList.remove("spelerBeurt");
+  }
 }
 
-function dobbelsteenAnimatie(i) {
-  dicesElement[i].classList.add("animation");
+function removeHolds() {
+  for (let i = 0; i < diceHold.length; i++) {
+    diceHold[i] = false;
+    dicesElement[i].classList.remove("hold");
+  }
+}
 
-  setTimeout(() => {
-    dicesElement[i].classList.remove("animation");
-  }, 1000);
+function volgendeRondeDisplay() {
+  rounds++;
+  roundsElement.textContent = `Ronde: ${rounds}`;
+}
+
+function addToSubtotal(i) {
+  if (playerTurn == 0) {
+    upperTotal[playerTurn] += Number(leftClick[i].textContent);
+    upperTotalElement[playerTurn].textContent = upperTotal[playerTurn];
+    console.log(upperTotal);
+  } else {
+    upperTotal[playerTurn] += Number(rightClick[i].textContent);
+    upperTotalElement[playerTurn].textContent = upperTotal[playerTurn];
+    console.log(upperTotal);
+  }
+}
+
+function addToGrandTotal(i) {
+  if (playerTurn == 0) {
+    grandTotal[playerTurn] += Number(leftClick[i].textContent);
+    grandTotalElement[playerTurn].textContent = grandTotal[playerTurn];
+  } else {
+    grandTotal[playerTurn] += Number(rightClick[i].textContent);
+    grandTotalElement[playerTurn].textContent = grandTotal[playerTurn];
+  }
 }
