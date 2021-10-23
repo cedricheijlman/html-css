@@ -31,7 +31,9 @@ holdFunctie();
 // Als Roll knop wordt geklikt nieuweRoll Functie Uitvoeren
 rollKnop.addEventListener("click", nieuweRoll);
 
-//
+// als 1 van de scores wordt geselecteerd
+// leftClick = Speler1 scores
+// rightClick = Speler2 scores
 
 for (let i = 0; i < leftClick.length; i++) {
   leftClick[i].addEventListener("click", function () {
@@ -42,7 +44,7 @@ for (let i = 0; i < leftClick.length; i++) {
     ) {
       leftClick[i].classList.add("checked");
       rollsReset();
-      addToSubtotal(i);
+
       addToGrandTotal(i);
       removeLeftScore();
       highlightSpelerBeurt();
@@ -59,7 +61,7 @@ for (let i = 0; i < leftClick.length; i++) {
     ) {
       rightClick[i].classList.add("checked");
       rollsReset();
-      addToSubtotal(i);
+
       addToGrandTotal(i);
       removeRightScore();
       highlightSpelerBeurt();
@@ -69,6 +71,8 @@ for (let i = 0; i < leftClick.length; i++) {
     }
   });
 }
+
+// functies voor als een van de scores wordt geklikt
 
 function rollsReset() {
   rollsLeft = 3;
@@ -111,18 +115,6 @@ function removeHolds() {
 function volgendeRondeDisplay() {
   rounds++;
   roundsElement.textContent = `Ronde: ${rounds}`;
-}
-
-function addToSubtotal(i) {
-  if (playerTurn == 0) {
-    upperTotal[playerTurn] += Number(leftClick[i].textContent);
-    upperTotalElement[playerTurn].textContent = upperTotal[playerTurn];
-    console.log(upperTotal);
-  } else {
-    upperTotal[playerTurn] += Number(rightClick[i].textContent);
-    upperTotalElement[playerTurn].textContent = upperTotal[playerTurn];
-    console.log(upperTotal);
-  }
 }
 
 function addToGrandTotal(i) {

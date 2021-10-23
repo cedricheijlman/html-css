@@ -1,4 +1,4 @@
-// Als dobbelsteen niet op hold staat nieuwe cijfer - cijfer Wordt Displayed,
+// Als dobbelsteen niet op hold staat nieuwe cijfer dobbelsteen - cijfer Wordt Displayed,
 // animatie dobbelsteen wordt toegevoegd en afghaald
 // nextDiceRoll = RollNummer - 1.
 // als rollNummer 0 is niet meer kunnen dobbelen en keuze moeten maken uit punten
@@ -6,7 +6,7 @@ function nieuweRoll() {
   for (let i = 0; i < dicesElement.length; i++) {
     if (diceHold[i] === false && rollsLeft > 0) {
       numbersDices[i] = Math.floor(Math.random() * 6); // random getal
-      console.log(numbersDices);
+
       dobbelsteenDisplay(i);
       dobbelsteenAnimatie(i);
     }
@@ -63,6 +63,13 @@ function scoreChecker() {
   foursCheck();
   fivesCheck();
   sixesCheck();
+  threeOfKindCheck();
+  fourOfKindCheck();
+  fullHouseCheck();
+  changeCheck();
+  yahtzeeCheck();
+  largeStraightCheck();
+  smallStraightCheck();
 }
 
 // switch player
