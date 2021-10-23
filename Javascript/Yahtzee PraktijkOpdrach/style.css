@@ -483,6 +483,12 @@ img {
   }
 }
 
+@media screen and (max-width: 447px) {
+  .titelGame {
+    font-size: 70px;
+  }
+}
+
 @media screen and (max-width: 356px) {
   .gameBoard {
     min-width: 300px;
