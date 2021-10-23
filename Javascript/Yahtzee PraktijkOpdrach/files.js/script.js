@@ -110,6 +110,7 @@ function clickEventsScore() {
       ) {
         rightClick[i].classList.add("checked");
         rollsReset();
+
         subTotal(i);
         addToGrandTotal(i);
         bonusCheck();

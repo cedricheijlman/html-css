@@ -53,6 +53,22 @@ body {
   justify-content: center;
 }
 
+.leftClick {
+  cursor: pointer;
+}
+
+.leftClick:hover,
+.rightClick:hover {
+  border-radius: 5px;
+  transform: scale(1.1);
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.295);
+}
+
+.rightClick {
+  cursor: pointer;
+}
+
 .text {
   display: flex;
   justify-content: left;
@@ -141,12 +157,12 @@ body {
 
 .grandTotal-1 {
   grid-column: 2 / -1;
-  background-color: rgb(75, 180, 48);
+  background-color: rgba(58, 168, 30, 0.651);
 }
 
 .grandTotal-2 {
   grid-column: 2 / -1;
-  background-color: rgb(75, 180, 48);
+  background-color: rgba(58, 168, 30, 0.651);
 }
 
 .titel {
@@ -294,17 +310,7 @@ img {
   }
 }
 
-/* overige */
-
-.checked {
-  background-color: green;
-}
-
-.spelerBeurt {
-  background-color: rgba(0, 0, 255, 0.288);
-  text-shadow: 1px 1px 10px white;
-}
-
+/* end screen */
 .endScreen-background {
   display: none;
   position: absolute;
@@ -373,9 +379,13 @@ img {
   background-color: rgba(255, 255, 255, 0.055);
 }
 
+/* game container */
+
 .container {
   display: none;
 }
+
+/* begin scherm */
 
 .beginScreen-background {
   display: flex;
@@ -469,6 +479,19 @@ img {
   transform: scale(1.1);
   background-color: rgba(255, 255, 255, 0.055);
 }
+
+/* overige */
+
+.checked {
+  background-color: rgba(0, 128, 0, 0.75);
+}
+
+.spelerBeurt {
+  background-color: rgba(0, 0, 255, 0.288);
+  text-shadow: 1px 1px 10px white;
+}
+
+/* --- */
 
 /* media queries */
 
