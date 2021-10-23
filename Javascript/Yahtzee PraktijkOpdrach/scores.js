@@ -26,8 +26,8 @@ let yahtzeeElement = document.querySelectorAll(".yahtzee");
 let yahtzee = [0, 0];
 
 let sumOfDices = 0;
+let bonusElement = document.querySelectorAll(".bonus");
 let bonus = [0, 0];
-let upperTotal = [0, 0];
 
 function acesCheck() {
   if (acesElement[playerTurn].classList.contains("checked") == false) {
@@ -234,6 +234,7 @@ function yahtzeeCheck() {
 
 function largeStraightCheck() {
   if (largeStraightElement[playerTurn].classList.contains("checked") == false) {
+    largeStraight[playerTurn] = 0;
     let sortArray = [];
     for (let i = 0; i < numbersDices.length; i++) {
       sortArray[i] = numbersDices[i];
@@ -312,6 +313,22 @@ function smallStraightCheck() {
       smallStraightElement[playerTurn].textContent = smallStraight[playerTurn];
     } else {
       smallStraightElement[playerTurn].textContent = smallStraight[playerTurn];
+    }
+  }
+}
+
+function bonusCheck() {
+  if (bonusElement[playerTurn].classList.contains("checked") == false) {
+    if (upperTotal[playerTurn] >= 63) {
+      bonus[playerTurn] = 35;
+      bonusElement[playerTurn].textContent = bonus[playerTurn];
+
+      upperTotal[playerTurn] += bonus[playerTurn];
+      upperTotalElement[playerTurn].textContent = upperTotal[playerTurn];
+
+      grandTotal[playerTurn] += bonus[playerTurn];
+      grandTotalElement[playerTurn].textContent = grandTotal[playerTurn];
+      bonusElement[playerTurn].classList.add("checked");
     }
   }
 }
