@@ -8,6 +8,7 @@ let images = [
   "dice-five.png",
   "dice-six.png",
 ];
+let play = document.querySelector(".play");
 let playAgain = document.querySelector(".playAgain");
 let rollKnop = document.querySelector(".btn-roll");
 let playerTurn = 0;
@@ -30,6 +31,13 @@ let lowerTotalElement = document.querySelectorAll(".lowerTotal");
 let grandTotalElement = document.querySelectorAll(".grandTotal");
 let endScreenBackground = document.querySelector(".endScreen-Background");
 let endScreen = document.querySelector(".endScreen");
+let beginScreenBackground = document.querySelector(".beginScreen-Background");
+let beginScreen = document.querySelector(".beginScreen");
+let container = document.querySelector(".container");
+let playerEenNaam = document.querySelector(".player1");
+let playerTweeNaam = document.querySelector(".player2");
+let spelerEen = document.querySelector(".speler1");
+let spelerTwee = document.querySelector(".speler2");
 // Game Start
 
 gameStart();
@@ -38,14 +46,33 @@ gameStart();
 function gameStart() {
   holdFunctie();
   rollKnop.addEventListener("click", nieuweRoll);
-  document.querySelector(".endGame").addEventListener("click", resetGame);
+  document.querySelector(".endGame").addEventListener("click", function () {
+    resetGame();
+    gameToBegin();
+  });
   clickEventsScore();
 }
 
 // eind scherm / play again button
 playAgain.addEventListener("click", function () {
-  document.querySelector(".endscreen-background").style.display = "none";
-  document.querySelector(".endscreen").style.display = "none";
+  endScreenBackground.style.display = "none";
+  endScreen.style.display = "none";
+  container.style.display = "flex";
+});
+
+// begin scherm / play button
+play.addEventListener("click", function () {
+  spelerEen.textContent = playerEenNaam.value;
+  spelerTwee.textContent = playerTweeNaam.value;
+  if (spelerEen.textContent == "") {
+    spelerEen.textContent = "Speler 1";
+  }
+  if (spelerTwee.textContent == "") {
+    spelerTwee.textContent = "Speler 2";
+  }
+
+  beginScreenBackground.style.display = "none";
+  beginScreen.style.display = "none";
   document.querySelector(".container").style.display = "flex";
 });
 
@@ -94,26 +121,30 @@ function clickEventsScore() {
         volgendeRondeDisplay();
         console.log(grandTotal);
 
+        // Als einde game is - ronde 14 - eindscherm play again button en winnaar - resetgame
         if (rounds == 14) {
           if (grandTotal[0] == grandTotal[1]) {
             console.log("Its a tie");
             document.querySelector(
               ".wintext"
-            ).textContent = `Het is gelijkspel! met ${grandTotal[0]} punten`;
+            ).textContent = `Het is gelijkspel! 
+            met ${grandTotal[0]} punten`;
             endScreenDisplay();
             resetGame();
           } else if (grandTotal[0] > grandTotal[1]) {
             console.log("Player 1 Won");
             document.querySelector(
               ".wintext"
-            ).textContent = `Speler 1 wint! met ${grandTotal[0]} punten`;
+            ).textContent = `${spelerEen.textContent} wint! 
+            met ${grandTotal[0]} punten`;
             endScreenDisplay();
             resetGame();
           } else {
             console.log("Player 2 Won");
             document.querySelector(
               ".wintext"
-            ).textContent = `Speler 2 wint! met ${grandTotal[1]} punten`;
+            ).textContent = `${spelerTwee.textContent} wint! 
+             met ${grandTotal[1]} punten`;
             endScreenDisplay();
             resetGame();
           }
@@ -271,4 +302,12 @@ function endScreenDisplay() {
   endScreenBackground.style.display = "flex";
   endScreen.style.display = "flex";
   document.querySelector(".container").style.display = "none";
+}
+// game screen naar begin screen
+function gameToBegin() {
+  playerEenNaam.value = "";
+  playerTweeNaam.value = "";
+  beginScreenBackground.style.display = "flex";
+  beginScreen.style.display = "flex";
+  container.style.display = "none";
 }

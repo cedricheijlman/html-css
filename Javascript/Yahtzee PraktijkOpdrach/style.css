@@ -15,7 +15,7 @@ body {
 /* container */
 
 .container {
-  background: url("background.png");
+  background: url("backgrounds/background.png");
   object-fit: contain;
   flex-wrap: wrap;
   display: flex;
@@ -183,7 +183,7 @@ body {
     rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
     rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
   background: linear-gradient(rgba(151, 30, 30, 0.2), rgba(151, 30, 30, 0.1)),
-    url("background.png");
+    url("backgrounds/background.png");
 }
 
 .rollsLeft {
@@ -315,7 +315,7 @@ img {
       rgba(162, 87, 185, 0.22),
       rgba(58, 41, 119, 0.267)
     ),
-    url("homescreen.gif");
+    url("backgrounds/homescreen.gif");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -387,7 +387,7 @@ img {
       rgba(162, 87, 185, 0.22),
       rgba(58, 41, 119, 0.267)
     ),
-    url("beginscherm.gif");
+    url("backgrounds/beginscherm.gif");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -438,7 +438,7 @@ img {
   padding: 30px 0;
   margin-bottom: 30px;
   color: rgba(255, 255, 255, 0.527);
-  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.849);
+  text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.849);
   font-size: 120px;
 }
 
@@ -469,6 +469,8 @@ img {
   transform: scale(1.1);
   background-color: rgba(255, 255, 255, 0.055);
 }
+
+/* media queries */
 
 @media screen and (max-width: 495px) {
   .gameBoard {
