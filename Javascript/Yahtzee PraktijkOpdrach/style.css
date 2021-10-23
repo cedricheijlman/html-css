@@ -410,34 +410,29 @@ img {
   align-items: center;
 }
 
-.spelerstext {
-  display: flex;
-}
-
 .naamInputbox {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  margin: 3px 0;
   line-height: 20px;
+  align-items: center;
 }
 
 .nameInput {
+  border-radius: 8px;
   text-align: center;
   margin: 10 15px;
-  width: 100%;
+  width: 60%;
   height: 100%;
   min-height: 30px;
   background-color: rgba(255, 255, 255, 0.336);
   border: none;
-  min-width: 120px;
+  min-width: 150px;
   color: white;
 }
 
 .label {
-  text-align: center;
   color: white;
-  text-align: center;
-  margin: 0 55px;
 }
 .titelGame {
   padding: 30px 0;
