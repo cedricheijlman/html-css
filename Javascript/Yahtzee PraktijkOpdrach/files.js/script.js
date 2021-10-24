@@ -197,6 +197,11 @@ function removeHolds() {
 
 function volgendeRondeDisplay() {
   rounds++;
+
+  roundsElement.classList.add("scale");
+  setTimeout(() => {
+    roundsElement.classList.remove("scale");
+  }, 2000);
   roundsElement.textContent = `Ronde: ${rounds}`;
 }
 

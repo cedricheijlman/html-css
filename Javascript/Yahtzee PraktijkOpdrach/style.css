@@ -238,6 +238,24 @@ body {
   text-shadow: 1px 1px 7px white;
 }
 
+.scale {
+  animation: scale 2s 1;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  40% {
+    transform: scale(1.7);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 /* Btn Roll Knop */
 
 .btn-roll {
