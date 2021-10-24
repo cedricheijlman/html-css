@@ -74,6 +74,7 @@ play.addEventListener("click", function () {
   beginScreenBackground.style.display = "none";
   beginScreen.style.display = "none";
   document.querySelector(".container").style.display = "flex";
+  volgendeRondeDisplay();
 });
 
 // als 1 van de scores wordt geselecteerd events
@@ -119,6 +120,7 @@ function clickEventsScore() {
         removeHolds();
         switchPlayer();
         highlightSpelerBeurt();
+        volgendRonde();
         volgendeRondeDisplay();
         console.log(grandTotal);
 
@@ -195,9 +197,11 @@ function removeHolds() {
   }
 }
 
-function volgendeRondeDisplay() {
+function volgendRonde() {
   rounds++;
+}
 
+function volgendeRondeDisplay() {
   roundsElement.classList.add("scale");
   setTimeout(() => {
     roundsElement.classList.remove("scale");
